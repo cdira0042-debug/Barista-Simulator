@@ -1,0 +1,219 @@
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    Fana Coffee  
+    COFFEE · DAILY  
+  
+  
+  
+  
+    
+Balance
+Rp 50.000
+  
+    
+Served
+0 cups
+  
+    
+Rating
+—
+  
+  
+  
+  
+  
+  
+  
+    
+  
+      
+Barista Station
+  
+      
+Take orders. Make coffee. Serve.
+  
+    
+  
+    
+● OPEN
+  
+  
+  
+  
+  
+    
+  
+      
+  
+        
+  
+          
+Customer order
+  
+          ORDER #01  
+        
+  
+
+    <div class="customer">  
+      <div class="avatar" id="avatar">A</div>  
+      <div>  
+        <strong id="customerName">Avery</strong>  
+        <p id="customerLine">One coffee, please.</p>  
+      </div>  
+    </div>  
+
+    <div class="ticket">  
+      <div class="ticket-label">ORDER TICKET</div>  
+      <div class="order-name" id="orderName">Iced Latte</div>  
+      <div class="order-details" id="orderDetails"></div>  
+      <div class="order-price">  
+        Order total  
+        <b id="orderPrice">Rp 25.000</b>  
+      </div>  
+    </div>  
+  </div>  
+
+  <div class="panel">  
+    <div class="panel-head">  
+      <h2>Menu</h2>  
+      <small>COFFEE & MILK</small>  
+    </div>  
+    <div class="menu-list" id="menuList"></div>  
+    <div class="menu-note">Harga menu ukuran medium. Harga dapat berubah sesuai ukuran.</div>  
+  </div>  
+</section>  
+
+<section>  
+  <div class="panel">  
+    <div class="panel-head">  
+      <h2>Prepare order</h2>  
+      <small>BARISTA COUNTER</small>  
+    </div>  
+
+    <div class="field">  
+      <label>1. Coffee</label>  
+      <div class="choices" id="drinkChoices"></div>  
+    </div>  
+
+    <div class="field">  
+      <label>2. Size</label>  
+      <div class="choices" id="sizeChoices"></div>  
+    </div>  
+
+    <div class="field">  
+      <label>3. Temperature</label>  
+      <div class="choices" id="temperatureChoices"></div>  
+    </div>  
+
+    <div class="field">  
+      <label>4. Extra ice</label>  
+      <div class="choices" id="iceChoices"></div>  
+    </div>  
+
+    <div class="field">  
+      <label>5. Espresso shots</label>  
+      <div class="choices" id="shotChoices"></div>  
+    </div>  
+
+    <div class="field">  
+      <label>6. Milk</label>  
+      <select id="milk">  
+        <option>Regular milk</option>  
+        <option>Oat milk</option>  
+        <option>Almond milk</option>  
+        <option>No milk</option>  
+      </select>  
+    </div>  
+
+    <div class="field">  
+      <label>7. Syrup</label>  
+      <select id="syrup">  
+        <option>No syrup</option>  
+        <option>Vanilla syrup</option>  
+        <option>Caramel syrup</option>  
+        <option>Hazelnut syrup</option>  
+        <option>Butterscotch syrup</option>  
+        <option>Chocolate syrup</option>  
+      </select>  
+    </div>  
+
+    <div class="field">  
+      <label for="cupNameToggle">8. Nama pada cup</label>  
+      <div class="cup-name-options">  
+        <label class="cup-name-toggle">  
+          <input id="cupNameToggle" type="checkbox" checked>  
+          Tambahkan nama customer  
+        </label>  
+        <input id="cupNameInput" type="text" maxlength="18" placeholder="Nama customer">  
+      </div>  
+    </div>  
+
+    <div class="station">  
+      <div class="station-inner">  
+        <div class="station-title">  
+          <b>Preparation counter</b>  
+          <span id="cupSize">MEDIUM</span>  
+        </div>  
+
+        <div class="cup-area">  
+          <div class="cup" id="cup">  
+            <div class="cup-straw"></div>  
+            <div class="cup-lid"></div>  
+            <div class="cup-body">  
+              <div class="cup-contents" id="cupContents"></div>  
+              <div class="cup-label">  
+                <span id="cupCustomerName"></span>  
+              </div>  
+            </div>  
+          </div>  
+        </div>  
+
+        <div class="station-status" id="stationStatus">  
+          Follow the order ticket.  
+        </div>  
+
+        <button class="primary" id="makeBtn" onclick="makeDrink()">  
+          Tambahkan bahan pertama  
+        </button>  
+        <button class="primary" id="serveBtn" onclick="serveDrink()"  
+          style="display:none;margin-top:8px">  
+          Serve order  
+        </button>  
+      </div>  
+    </div>  
+
+    <div class="message" id="message"></div>  
+  </div>  
+
+  <div class="panel">  
+    <div class="panel-head">  
+      <h2>Daily target</h2>  
+      <small>5 ORDERS</small>  
+    </div>  
+    <div style="font-size:12px">Customers served</div>  
+    <div class="progress-track">  
+      <div class="progress-fill" id="progress"></div>  
+    </div>  
+    <div class="goal-text" id="goalText">0 / 5 orders completed</div>  
+  </div>  
+</section>  
+
+
+  
+  
+  
+FANA COFFEE · DAILY SERVICE
+  
+  
+  
+
